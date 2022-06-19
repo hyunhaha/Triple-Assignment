@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import useAppear from '../hooks/useAppear'
-import useCountUp from '../hooks/useCountUp'
-import { AppearAnimationStyle } from '../styles/commons/AppearAnimationStyle'
-import AppearAnimation from './AppearAnimation'
+import useCountUp from '../../hooks/useCountUp'
+import useAppear from '../../hooks/useAppear'
+import { AppearAnimationStyle } from '../../styles/commons/AppearAnimationStyle'
 
 const CountingSection = ({ duration, delay }) => {
   const count = useCountUp(700)

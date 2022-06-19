@@ -1,8 +1,7 @@
 import './App.css'
-import Section from './Component/Section'
-import AppIntroduce from './Component/AppIntroduce'
+import Section from './Components/Section'
+import AppIntroduce from './Components/AppIntroduce/AppIntroduce'
 import { GlobalStyle } from './styles/globalStyle'
-import { ThemeProvider } from 'styled-components'
 
 const App = () => {
   return (

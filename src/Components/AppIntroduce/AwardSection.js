@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import useAppear from '../hooks/useAppear'
-import { AppearAnimationStyle } from '../styles/commons/AppearAnimationStyle'
+import useAppear from '../../hooks/useAppear'
+import { AppearAnimationStyle } from '../../styles/commons/AppearAnimationStyle'
 
 const AwardSection = ({ duration, delay }) => {
   const [opacity, transY] = useAppear()
