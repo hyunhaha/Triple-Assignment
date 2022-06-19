@@ -7,17 +7,15 @@ const LogoSection = ({ duration, delay, data }) => {
   const [opacity, transY] = useAppear()
 
   return (
-    <>
-      <LogoSectionBlock
-        opacity={opacity}
-        transY={transY}
-        duration={duration}
-        delay={delay}
-        image={data.image}
-      >
-        {data.text}
-      </LogoSectionBlock>
-    </>
+    <LogoSectionBlock
+      opacity={opacity}
+      transY={transY}
+      duration={duration}
+      delay={delay}
+      image={data.image}
+    >
+      {data.text}
+    </LogoSectionBlock>
   )
 }
 const LogoSectionBlock = styled(AppearAnimationStyle)`
