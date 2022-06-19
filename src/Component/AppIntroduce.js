@@ -1,16 +1,21 @@
 import React from 'react'
+import useCountUp from '../hooks/useCountUp'
 import AppearAnimation from './AppearAnimation'
 
 const AppIntroduce = (props) => {
+  const count = useCountUp(700)
+  const count1 = useCountUp(100)
+  const count2 = useCountUp(670)
+
   return (
     <div>
       <AppearAnimation duration={700} delay={100}>
         2021년 12월 기준
       </AppearAnimation>
       <AppearAnimation duration={700} delay={200}>
-        <div>700만 명의 여행자</div>
-        <div>100만 개의 여행 리뷰</div>
-        <div>670만 개의 여행 일정</div>
+        <div>{count}만 명의 여행자</div>
+        <div>{count1}만 개의 여행 리뷰</div>
+        <div>{count2}만 개의 여행 일정</div>
       </AppearAnimation>
       <AppearAnimation duration={700} delay={300}>
         <div>
