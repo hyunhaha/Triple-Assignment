@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from 'react'
 
 const slowDown = (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t))
-const frameDuration = 1000 / 60
 
 const CountUp = ({ target, duration = 2000 }) => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    const totalFrames = Math.round(duration / frameDuration)
+    const start = new Date()
     let current = 0
-    const countUpTimer = setInterval(() => {
-      current += 1
-      const percent = slowDown(current / totalFrames)
-      setCount(target * percent)
-      if (current === totalFrames) {
-        clearInterval(countUpTimer)
+
+    const interval = () => {
+      current = new Date() - start
+      const percent = slowDown(current / duration)
+      setCount(Math.ceil(target * percent))
+      if (current < duration) {
+        window.requestAnimationFrame(interval)
+      } else {
+        console.log(new Date() - start)
       }
-    }, frameDuration)
+    }
+    window.requestAnimationFrame(interval)
   }, [duration, target])
 
-  return <span>{Math.floor(count)}</span>
+  return <span>{count}</span>
 }
 
 export default CountUp
