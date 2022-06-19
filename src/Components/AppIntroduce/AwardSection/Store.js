@@ -16,7 +16,7 @@ const StoreBlock = styled.li`
   background-image: url(${(props) => props.link});
   background-position: left top;
   background-repeat: no-repeat;
-  color: rgba(58, 58, 58, 0.8);
+  color: ${(props) => props.theme.color.gray2};
   font-weight: bold;
   background-size: 54px 54px;
   height: 54px;

@@ -32,6 +32,6 @@ const LogoSectionBlock = styled.div`
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;
-  color: rgba(58, 58, 58, 0.7);
+  color: ${(props) => props.theme.color.gray3}; ;
 `
 export default LogoSection
