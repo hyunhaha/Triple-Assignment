@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { countUpLines } from '../../util/countUpLines'
-import AwardSection from './AwardSection'
+import { awardLines, countUpLines } from '../../util/lines'
+import AwardSection from './AwardSection/AwardSection'
 import CountingSection from './CountingSection/CountingSection'
 import LogoSection from './LogoSection'
 
@@ -10,7 +10,7 @@ const AppIntroduce = (props) => {
     <AppIntroduceBlock>
       <LogoSection duration={700} delay={100} />
       <CountingSection duration={700} delay={200} sentences={countUpLines} />
-      <AwardSection duration={700} delay={300} />
+      <AwardSection duration={700} delay={300} awardLines={awardLines} />
     </AppIntroduceBlock>
   )
 }
