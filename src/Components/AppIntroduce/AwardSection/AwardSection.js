@@ -4,7 +4,7 @@ import useAppear from '../../../hooks/useAppear'
 import { AppearAnimationStyle } from '../../../styles/commons/AppearAnimationStyle'
 import Store from './Store'
 
-const AwardSection = ({ duration, delay, awardLines }) => {
+const AwardSection = ({ duration, delay, awardData }) => {
   const [opacity, transY] = useAppear()
 
   return (
@@ -14,7 +14,7 @@ const AwardSection = ({ duration, delay, awardLines }) => {
       duration={duration}
       delay={delay}
     >
-      {awardLines.map((data, idx) => (
+      {awardData.map((data, idx) => (
         <Store key={idx} data={data} />
       ))}
     </AwardSectionBlock>

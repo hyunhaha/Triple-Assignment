@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import useAppear from '../../hooks/useAppear'
 import { AppearAnimationStyle } from '../../styles/commons/AppearAnimationStyle'
 
-const LogoSection = ({ duration, delay }) => {
+const LogoSection = ({ duration, delay, data }) => {
   const [opacity, transY] = useAppear()
 
   return (
@@ -13,8 +13,9 @@ const LogoSection = ({ duration, delay }) => {
         transY={transY}
         duration={duration}
         delay={delay}
+        image={data.image}
       >
-        2021년 12월 기준
+        {data.text}
       </LogoSectionBlock>
     </>
   )
@@ -28,7 +29,7 @@ const LogoSectionBlock = styled(AppearAnimationStyle)`
   padding-top: 280px;
   font-size: 15px;
   box-sizing: border-box;
-  background-image: url(images/triple2x.png);
+  background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;

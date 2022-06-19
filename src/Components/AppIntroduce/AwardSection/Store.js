@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Store = ({ data }) => {
   return (
     <StoreBlock link={data.image}>
-      {data.line[0]}
+      {data.text[0]}
       <br />
-      {data.line[1]}
+      {data.text[1]}
     </StoreBlock>
   )
 }
