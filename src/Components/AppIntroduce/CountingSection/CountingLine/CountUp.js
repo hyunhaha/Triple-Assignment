@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
-const slowDown = (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t))
+import { slowDown } from '../../../../util/utilFun'
 
 const CountUp = ({ target, duration = 2000 }) => {
   const [count, setCount] = useState(0)

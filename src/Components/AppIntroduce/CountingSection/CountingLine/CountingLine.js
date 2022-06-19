@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { pasingToWord } from '../../../../util/utilFun'
 import CountUp from './CountUp'
 
 const CountingLine = ({ sentence }) => {
-  const [count, unit, last] = sentence
+  const [count, unit, last] = pasingToWord(sentence)
 
   return (
     <CountingLineBlock>
