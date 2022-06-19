@@ -1,4 +1,3 @@
-import Section from './Components/Section'
 import AppIntroduce from './Components/AppIntroduce/AppIntroduce'
 import { GlobalStyle } from './styles/globalStyle'
 import { ThemeProvider } from 'styled-components'
@@ -10,9 +9,7 @@ const App = () => {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <div className="App">
-          <Section>
-            <AppIntroduce />
-          </Section>
+          <AppIntroduce />
         </div>
       </ThemeProvider>
     </>
