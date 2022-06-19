@@ -5,11 +5,11 @@ export const countUpLines = [
 ]
 export const awardLines = [
   {
-    image: 'play-store2x.png',
+    image: 'images/play-store2x.png',
     line: ['2018 구글 플레이 스토어', '올해의 앱 최우수상 수상'],
   },
   {
-    image: 'badge-apple4x.png',
+    image: 'images/badge-apple4x.png',
     line: ['2018 애플 앱스토어', '오늘의 여행앱 선정'],
   },
 ]

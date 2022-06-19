@@ -28,7 +28,7 @@ const LogoSectionBlock = styled(AppearAnimationStyle)`
   padding-top: 280px;
   font-size: 15px;
   box-sizing: border-box;
-  background-image: url(triple2x.png);
+  background-image: url(images/triple2x.png);
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;
