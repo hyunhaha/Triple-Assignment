@@ -20,7 +20,7 @@ const CountingSection = ({ duration, delay, sentences }) => {
   )
 }
 const CountingSectionBlock = styled(AppearAnimationStyle)`
-  margin-left: 623px;
+  margin-left: 60%;
   padding-top: 150px;
 `
 export default CountingSection

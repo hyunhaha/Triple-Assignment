@@ -11,9 +11,8 @@ export const GlobalStyle = createGlobalStyle`
         display: none;
     }
     html{
-        // font-size: 16px;
         -webkit-text-size-adjust: none;
-        font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";       
         font-display: fallback;
         -ms-overflow-style: none;
         scrollbar-width: none;
