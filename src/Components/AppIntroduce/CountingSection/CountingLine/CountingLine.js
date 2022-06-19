@@ -16,7 +16,7 @@ const CountingLine = ({ sentence }) => {
     </CountingLineBlock>
   )
 }
-const CountingLineBlock = styled.div`
+const CountingLineBlock = styled.li`
   color: rgb(58, 58, 58);
   font-family: sans-serif;
   font-size: 36px;

@@ -19,7 +19,8 @@ const CountingSection = ({ duration, delay, sentences }) => {
     </CountingSectionBlock>
   )
 }
-const CountingSectionBlock = styled(AppearAnimationStyle)`
+const CountingSectionBlock = styled.ul`
+  ${AppearAnimationStyle}
   margin-left: 60%;
   padding-top: 150px;
 `

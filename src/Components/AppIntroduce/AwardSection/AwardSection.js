@@ -21,7 +21,8 @@ const AwardSection = ({ duration, delay, awardData }) => {
   )
 }
 
-const AwardSectionBlock = styled(AppearAnimationStyle)`
+const AwardSectionBlock = styled.ul`
+  ${AppearAnimationStyle}
   margin: 50px 0px 140px 60%;
 `
 export default AwardSection

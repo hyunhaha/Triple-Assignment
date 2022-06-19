@@ -18,7 +18,8 @@ const LogoSection = ({ duration, delay, data }) => {
     </LogoSectionBlock>
   )
 }
-const LogoSectionBlock = styled(AppearAnimationStyle)`
+const LogoSectionBlock = styled.div`
+  ${AppearAnimationStyle}
   position: absolute;
   top: 150px;
   width: 400px;

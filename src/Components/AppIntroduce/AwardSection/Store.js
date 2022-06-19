@@ -10,7 +10,7 @@ const Store = ({ data }) => {
     </StoreBlock>
   )
 }
-const StoreBlock = styled.div`
+const StoreBlock = styled.li`
   display: inline-block;
   font-family: sans-serif;
   background-image: url(${(props) => props.link});
