@@ -1,8 +1,6 @@
 # Triple Assignment
 
-## 배포링크
-
-[https://hyunhaha.github.io/Triple-Assignment/](배포링크)
+> [배포 링크](https://hyunhaha.github.io/Triple-Assignment/)
 
 ## 프로젝트 실행 방법
 
